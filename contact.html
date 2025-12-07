@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="">
       <meta name="author" content="">
-      <title>Benthal - Contemporary electro acoustic jazz from Winterthur (CH)</title>
+      <title>Jeremias Schmidli - Contact</title>
       <!-- Css -->
       <link href="css/bootstrap.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
@@ -28,8 +28,9 @@
             <div class="nav-content hideNav hidden">
                <ul class="nav-list vcenter">
                   <li class="nav-item"><a class="item-anchor" href="index.html">Home</a></li>
-                  <li class="nav-item"><a class="item-anchor" href="band.html">Band</a></li>
-                  <li class="nav-item"><a class="item-anchor" href="media.html">Media</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="about.html">About</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="projects.html">Projects</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="live.html">Live</a></li>
                   <li class="nav-item"><a class="item-anchor" href="contact.html">Contact</a></li>
                </ul>
             </div>
@@ -50,10 +51,12 @@
                      })
                      }; 
                      function openMailer(element) {
-                     var y = decode("znvygb:pbagnpg@oraguny.onaq");
-                     element.setAttribute("href", y);
-                     element.setAttribute("onclick", "");
-                     element.firstChild.nodeValue = "Open email software";
+                     // decode and set a proper mailto: link, and update the displayed label
+                     var decoded = decode("pbagnpg@wrerzvnffpuzvqyv.pbz");
+                     element.setAttribute("href", "mailto:" + decoded);
+                     element.removeAttribute("onclick");
+                     var label = element.querySelector('.label');
+                     if(label) label.textContent = "Open email software";
                      };
                   </script>
                   <h3>
@@ -63,7 +66,7 @@
             </div>
             <div class="row margin-top-45">
                <div class="col-md-12">
-                  <img class="img-responsive margin-top-45" src="img/band2.jpg" alt="me">
+                  <img class="img-responsive margin-top-45" src="img/jeremias-roxy.jpg" alt="me">
                </div>
             </div>
          </div>
